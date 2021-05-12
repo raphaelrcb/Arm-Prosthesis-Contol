@@ -20,8 +20,8 @@ import math
 # from std_msgs.msg import Float64
 # from std_msgs.msg import String
 # from std_msgs.msg import UInt8
-from std_srvs.srv import Empty
-from sensor_msgs.msg import Imu
+# from std_srvs.srv import Empty
+# from sensor_msgs.msg import Imu
 
 
 with open('imu.yaml', 'r') as f:
@@ -29,7 +29,7 @@ with open('imu.yaml', 'r') as f:
     # logging.config.dictConfig(config)
 
 def quartenion_to_euler (QX, QY, QZ, QW):
-    print("TRANSFORMA QQQQ")
+    # print("TRANSFORMA QQQQ")
         # """
         # Convert a quaternion into euler angles (roll, pitch, yaw)
         # roll is rotation around x in radians (counterclockwise)
