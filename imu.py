@@ -454,7 +454,7 @@ class IMU(object):
                         # Parse the 3 byte header
                         fail_byte, logical_id, msg_len = (ord(x) for x in data_buffer[0:3])
                         if fail_byte:  # Communication failure
-                            # print('Error: non zero fail byte')
+                            print('Error: non zero fail byte')
                             return 0
                         data_buffer = data_buffer[3:]
                         # Check if the msg is from the requested sensor
