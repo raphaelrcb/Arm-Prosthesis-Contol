@@ -203,9 +203,9 @@ def main ():
                     tempo.append(timestamp-timestamp0)
                     print(timestamp-timestamp0)
                     i+=1
-                    print(EulerX[-1])
-                    print(EulerY[-1])
-                    print(EulerZ[-1])
+                    #print(EulerX[-1])
+                    #print(EulerY[-1])
+                    #print(EulerZ[-1])
                     print(i)
 
         except TypeError:
