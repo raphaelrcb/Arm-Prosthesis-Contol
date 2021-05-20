@@ -90,13 +90,20 @@ def main ():
     tempo = []
 
 
-    print("begin calibration")
-    for name in yei_imu.imus:
-        yei_imu.calibrate(name)
+
     
-    saida = []
     i=0
-    while (i<100):
+    print("Input anything to begin")
+    input()
+    while (i<1000):
+        #if i == 300:
+        #    print("begin")
+            # print("inicio tara")
+            # for name in yei_imu.imus:
+                # yei_imu.tare(name)
+            # print("fim tara")
+            # print(i)
+            
         try:
             timestamp = time.time()
             frame_id = 'base_link'
