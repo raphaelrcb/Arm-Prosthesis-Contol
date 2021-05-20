@@ -126,9 +126,9 @@ def main ():
                             # imuMsg.orientation.w = streaming_data[idx+3]
                             QuaternionW.append(streaming_data[idx+3])  
                             roll, pitch, yaw = quartenion_to_euler(QuaternionX[-1], QuaternionY[-1], QuaternionZ[-1], QuaternionW[-1])
-                            EulerX.append(roll)
-                            EulerY.append(pitch)
-                            EulerZ.append(yaw)
+                            EulerX.append(roll*180/math.pi)
+                            EulerY.append(pitch*180/math.pi)
+                            EulerZ.append(yaw*180/math.pi)
                             idx = idx+4
 
                         elif slot == 'getNormalizedGyroRate':
