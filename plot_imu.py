@@ -65,6 +65,11 @@ def main ():
     print("begin")
     yei_imu = imu.IMU(config)
 
+    print("begin calibration")
+    for name in yei_imu.imus:
+        #yei_imu.calibrate(name)
+        yei_imu.tare(name)
+
     QuaternionX = []
     QuaternionY = []
     QuaternionZ = []
